@@ -1,0 +1,33 @@
+* {
+    box-sizing: border-box;
+}
+html, body {
+    width: 100vw;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    font-family: Comic Sans MS;
+    font-size: 20px;    
+}
+body {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-gap: 10%;   
+}
+aside {
+    display: grid;
+    justify-content: space-between;  
+    margin: auto;  
+}
+.col-left {
+    justify-items: end;
+}
+.hobbies, .about {
+    display: grid;
+    justify-self: end;
+}
+img {
+    border-radius: 1000px;
+    height: 45vh;
+    top: 10%;
+}

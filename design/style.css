@@ -82,8 +82,7 @@
   
   .main-col-left {
     display: flex;
-    flex-direction: column;
-    margin-left: 0;
+    flex-direction: column;    
     justify-content: center;
     align-items: center;
   }
@@ -94,27 +93,8 @@
   
   .item {
     max-width: 50%;
-    line-height: 1.5em;
-    text-align: left;
+    line-height: 1.5em;    
     margin: 0 auto; 
     margin-top: 1.5em;
- }
-  
-  .main-col-right {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;    
-  }
-  .content-right {
-      justify-content: center;
-      align-content: center;
-  }  
-  .content-left + .content-right {
-    display: flex;
-    flex-direction: column;
-
-  }
-  .learn-button {
-      align-self: center;
-  }
+ } 
   

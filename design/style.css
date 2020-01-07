@@ -1,4 +1,4 @@
-*, ::before, ::after {  
+*, *::before, *::after {  
   box-sizing: border-box;
   margin: 0 auto;
   padding: 0;
@@ -44,6 +44,10 @@ h2 {
 h3 {
   font-size: 1.6em;
   font-weight: 500;
+}
+.more {
+  cursor: pointer;
+  font-size: .9em;
 }
 
 /* header styles */
@@ -135,6 +139,7 @@ display: contents;
   align-items: center;
   align-self: center;
   align-content: space-between;
+  margin-top: 1.5em;
 }
 .gift-header>h2 {
     margin: 2.3em;
@@ -147,7 +152,7 @@ display: contents;
   margin-bottom: 3em;
   flex-wrap: wrap;
   background-color: #FAFAFA;
-  height: 45vh;  
+  height: 38vh;  
 }
 .gift-card-row {
   display: flex;
@@ -198,6 +203,54 @@ display: contents;
 }
 /* blog section */
 .blog {
-  display: flex;
+  display: flex;  
   background-color: #231F20;
+  padding:  5rem;
+  margin: auto;
+  width: 65vw;
+  height: 29.5vh;
+  align-items: center;  
+  margin-top: 7em;
+
+}
+.blog-content {
+  height: 28vh;
+  flex-direction: column;
+  align-items: baseline;
+  align-content: space-around;
+  color: white;
+}
+.blog-img {
+  transform: translateX(-5em);  
+}
+.blog-content>span {
+  display: block;
+  font-size: .9em;
+  margin: 4em 0 2em auto;
+}
+.blog-content>h2 {
+  margin: 8.5rem 0 4rem;
+  font-size: 2em;
+
+}
+.blog-content>a {
+  display: inline-block;
+  margin-bottom: 0;
+  color: white;
+}
+/* blog post section */
+
+.blog-post {
+  display: grid;
+  margin: 0 auto;
+  grid-template-columns: 1fr 1fr;
+  width: 60vw;
+  height: 30vh;
+  align-items: space-evenly;
+  justify-content: center; 
+}
+.blog-post-right, .blog-post-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }

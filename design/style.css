@@ -229,9 +229,8 @@ display: contents;
   margin: 4em 0 2em auto;
 }
 .blog-content>h2 {
-  margin: 8.5rem 0 4rem;
+  margin: 6rem 0 6.5rem;
   font-size: 2em;
-
 }
 .blog-content>a {
   display: inline-block;
@@ -244,13 +243,22 @@ display: contents;
   display: grid;
   margin: 0 auto;
   grid-template-columns: 1fr 1fr;
+  grid-gap: 5%;
   width: 60vw;
   height: 30vh;
   align-items: space-evenly;
-  justify-content: center; 
+  justify-content: center;
 }
 .blog-post-right, .blog-post-left {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  width: 25vw;
+  
+}
+.blog-post-right>p, .blog-post-left>p {
+  padding-bottom: 1.2em;
+  vertical-align: bottom;
+
 }

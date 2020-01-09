@@ -13,6 +13,7 @@ body {
   height: 100%;
 }
 
+
 button {
   border-radius: 6px;
   border: 1px solid #F7941E;
@@ -21,8 +22,21 @@ button {
   font-size: 1.1em;
   color: #F7941E;
   line-height: 22px;
-  height: 4em;
+  height: 3em;
   width: 13em;
+}
+.head-but>button {
+  color: #F7941E;
+  background-color: white;
+}
+.main-button>button:hover,
+.learn-button>button:hover {  
+  background-color: #F7941E;
+  cursor: pointer;
+  transition: all 0.8s ease-in-out;
+  border: 2px solid #000000;
+  background-color: #de0000;
+  color: white;
 }
 
 p {
@@ -61,6 +75,15 @@ h3 {
   font-family: Roboto;
   margin: 3em 0 1.5em;
 }
+.more:hover {
+  transition: 2s step-end;
+  right: 4px;
+  left: 4px;
+
+}
+.card-more, .occasion {
+  transform: translateX(1.5em);
+}
 
 .blog-post-left,
 .card-shadow {
@@ -87,31 +110,17 @@ header {
   margin-left: 1.5em;
   padding-left: 1em;
 }
-
-.head-but>button {
-  color: #F7941E;
-  background-color: white;
-
-}
-
-.main-button>button:hover,
-.learn-button>button:hover {
-  color: white;
-  background-color: #F7941E;
-  cursor: pointer;
-}
-
 .logo {
   cursor: pointer;
 }
 
-@media screen and (max-width: 375px) {
+/* @media screen and (max-width: 375px) {
   header {
     display: inline-flex;
     align-items: center;
     transform: scale(0.5);
   }
-}
+} */
 
 /* article styles */
 main {
@@ -229,7 +238,7 @@ main {
   color: #000000;
   cursor: pointer;
   border: none;
-
+  transition: all 0.8s ease-out;
 }
 
 /* blog section */
@@ -239,7 +248,7 @@ main {
   padding: 5rem;
   margin: auto;
   width: 70vw;
-  height: 33vh;
+  height: 36.7vh;
   align-items: center;
   margin-top: 6em;
 }
@@ -254,6 +263,7 @@ main {
 
 .blog-img {
   transform: translateX(-5em);
+  height: 36.7vh;
 }
 
 .blog-content>span {
@@ -293,7 +303,7 @@ main {
   flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-evenly;
-  width: 25vw;
+  width: 27vw;
   margin-top: 4em;
 }
 
@@ -321,7 +331,7 @@ footer {
   align-items: flex-end;
   flex-wrap: wrap;
   flex-direction: column;
-  width: 100%;
+  width: 100vw;
   height: 10vh;
   background-color: #FAFAFA;
   margin: 0 auto;
@@ -344,15 +354,21 @@ hr {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  margin: 0 auto 3em;
+  margin: 0 auto;
   width: 15%;
+  height: 5vh;
+  transform: translateY(7em);
+}
+.soc:hover {
+  cursor: pointer;
 }
 
 .terms {
   display: inline-block;
-  margin: 0 auto 2em;
+  margin: 0 auto;
   text-align: center;
-  vertical-align: bottom;
+  width: 100%;  
+  transform: translateY(8em);
 }
 
 .terms>a {
@@ -364,7 +380,3 @@ hr {
   display: inline-block;
 }
 
-.footer-social,
-.terms {
-  transform: translateY(9em);
-}

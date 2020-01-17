@@ -1,0 +1,77 @@
+/* @media screen and (max-width: 375px) {
+    header{
+      display: grid;
+      grid-template-columns: 1fr;
+      width: 50%;
+      margin: 0 auto;
+    }
+    a {
+      font-size: .8em;
+    }
+    img {
+      transform: scale(.8);
+    }
+    button {
+      /* width: 12em; */
+    /* }
+  
+  }
+
+  @media screen and (max-width: 414px)  */
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  *, *:before, *:after {
+    box-sizing: border-box;
+    font-size: .8em;
+  }
+  body {
+    display: contents;
+    font-size: 1.1em;
+    transform: scale(.6);
+  }
+  header {
+    width: 30%;
+  }
+  main {
+    display: grid;
+    grid-template: 1fr;
+
+  }
+  .gift-card-sec {
+    height: 30em;
+    transform: translateY(30em);
+  }
+  .gift-card-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5em;
+  }
+  .gift-card {
+    height: 25rem;
+  }
+.card-img {
+  width: 20em;
+  height: 15em;
+}
+.orange {
+  transform: translate(0, 20em);
+  display: grid;
+  grid-template-column:  1fr;
+  justify-content: space-around;
+}
+.gift-header {
+  /* display: none; */
+  /* transform: translate(0. 50em); */
+  margin: 0;
+}
+.blog {
+  transform: translate(0, 25em);
+  padding: 0 auto;
+}
+.blog-post {
+  transform: translate(0, 10em);
+}
+
+}

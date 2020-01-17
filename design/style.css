@@ -5,6 +5,7 @@
   margin: 0 auto;
   padding: 0;
   max-width: 100%;
+  transition: all .5s;
 }
 
 body {
@@ -13,7 +14,6 @@ body {
   height: 100%;
 }
 
-
 button {
   border-radius: 6px;
   border: 1px solid #F7941E;
@@ -21,13 +21,13 @@ button {
   text-transform: uppercase;
   font-size: 1.1em;
   color: #F7941E;
-  line-height: 22px;
+  line-height: 1.375em;
   height: 3em;
   width: 13em;
 }
 .head-but>button {
   color: #F7941E;
-  background-color: white;
+  background-color: transparent;
 }
 .main-button>button:hover,
 .learn-button>button:hover {  
@@ -47,7 +47,7 @@ p {
 a {
   text-decoration: none;
   color: #000000;
-  font-size: 18px;
+  font-size: 1.2em;
 }
 
 .hero-side {
@@ -76,10 +76,9 @@ h3 {
   margin: 3em 0 1.5em;
 }
 .more:hover {
-  transition: 2s step-end;
-  right: 4px;
-  left: 4px;
-
+  display: block;
+  transform: translateX(10em);
+  transition: all 2s step-end;
 }
 .card-more, .occasion {
   transform: translateX(1.5em);
@@ -102,7 +101,7 @@ header {
 
 .header-section {
   display: inline-flex;
-  margin: 30px;
+  margin: 1.8em;
 }
 
 .header-item,
@@ -113,14 +112,6 @@ header {
 .logo {
   cursor: pointer;
 }
-
-/* @media screen and (max-width: 375px) {
-  header {
-    display: inline-flex;
-    align-items: center;
-    transform: scale(0.5);
-  }
-} */
 
 /* article styles */
 main {
@@ -150,15 +141,10 @@ main {
   display: contents;
 }
 
-/* gift card section */
+/* gift card section ebuchaya*/
 
-.gift-card-sec {
-  display: flex;
-  flex-direction: column;
-  height: 800px;
-  justify-content: space-evenly;
-
-  margin-top: 2em;
+.gift-card-sec {  
+  display: contents;
 }
 
 .gift-header {
@@ -180,18 +166,22 @@ main {
   align-items: baseline;
   flex-wrap: wrap;
   background-color: #FAFAFA;
-  height: 38vh;
+  height: 25rem;
   margin: 0;
+  width: 15em;
+
 }
 
 .gift-card-row {
-  display: flex;
-  flex-wrap: wrap;
-  height: 100%;
-  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 5em;
+  height: 35em;
+  width: 5em;
   justify-content: space-evenly;
-  margin-top: 3em;
-  transform: translateY(3em);
+  align-self: center;
+  margin: 0 auto;
+  transform: translate(0, 4em);
 }
 
 .occasion {
@@ -334,7 +324,6 @@ footer {
   width: 100vw;
   height: 10vh;
   background-color: #FAFAFA;
-  margin: 0 auto;
 }
 
 .footer-menu {
@@ -343,10 +332,12 @@ footer {
   align-items: flex-end;
   margin: 0 auto;
   width: 50%;
+  background-color: #FAFAFA;
+  transform: translateY(3em);
 }
 
 hr {
-  transform: translateY(5em);
+  transform: translateY(7em);
   width: 55%;
 }
 
@@ -357,7 +348,7 @@ hr {
   margin: 0 auto;
   width: 15%;
   height: 5vh;
-  transform: translateY(7em);
+  transform: translateY(9em);
 }
 .soc:hover {
   cursor: pointer;
@@ -368,7 +359,7 @@ hr {
   margin: 0 auto;
   text-align: center;
   width: 100%;  
-  transform: translateY(8em);
+  transform: translateY(11em);
 }
 
 .terms>a {
@@ -379,4 +370,3 @@ hr {
   width: .4em;
   display: inline-block;
 }
-

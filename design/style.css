@@ -7,7 +7,10 @@
   max-width: 100%;
   transition: all .5s;
 }
-
+html {
+  height: 100%;
+  width: 100%;
+}
 body {
   font-family: Comic Sans MS, 'Gill Sans MT', sans-serif;
   width: 100%;
@@ -143,7 +146,7 @@ main {
 
 /* gift card section ebuchaya*/
 
-.gift-card-sec {  
+.gift-card-sec {
   display: contents;
 }
 
@@ -169,7 +172,6 @@ main {
   height: 25rem;
   margin: 0;
   width: 15em;
-
 }
 
 .gift-card-row {
@@ -325,14 +327,15 @@ footer {
   height: 10vh;
   background-color: #FAFAFA;
 }
-
+.footer {
+  background-color: #FAFAFA;
+}
 .footer-menu {
   display: flex;
   justify-content: space-evenly;
   align-items: flex-end;
   margin: 0 auto;
   width: 50%;
-  background-color: #FAFAFA;
   transform: translateY(3em);
 }
 
@@ -369,4 +372,74 @@ hr {
 .space {
   width: .4em;
   display: inline-block;
+}
+
+@media only screen 
+and (min-device-width : 768px) 
+and (max-device-width : 1024px) {
+  *, *:before, *:after {
+    box-sizing: border-box;
+    font-size: .8em;
+  }
+  html {
+    padding: 0 auto;
+  }
+  .wrap {
+    width: 90%;
+    margin: 0 auto;
+  }
+  body {
+    display: contents;
+    font-size: 1.1em;
+    transform: scale(.6);
+    }
+
+  .header-section {
+    width: 50%;
+  }
+  .logo {
+    width: 35px;
+    height: 5px;
+  }
+  .gift-header {
+    align-self: flex-start;
+    margin: 0 auto;
+  }
+  .gift-card-sec {
+    height: 30em;
+    /* transform: translateY(30em); */
+  }
+  .gift-card-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-column-gap: 9em;
+  }
+.orange {
+  transform: translate(0, 20em);
+  margin: 0 auto;
+}
+.orange-headers {
+  align-items: center;
+}
+.orange-buttons {
+  transform: translate(4em, 0);
+}
+.blog-header {
+  transform: translate(0, 19em);
+}
+.blog {
+  transform: translate(0, 18em);
+}
+.blog-post {
+  transform: translate(0, 19em);
+  margin: 0 auto;
+}
+.footer {
+  transform: translate(0, 25em);
+  background-color: #FAFAFA;
+}
+.footer-social {
+  display: flex;
+  justify-content: space-between;
+}
 }

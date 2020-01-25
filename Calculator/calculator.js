@@ -4,31 +4,46 @@ function calc() {
     let result;
     switch (calc) {
         case '-':
-            function () {
+          document.getElementById('minus').onclick = function () {
                 let minus = arg1-arg2 || arg2-arg1;
-                return result; 
-            }
+                return result;
+                         }
             break;
         case '+':
+        document.getElementById('plus').onclick = function (){
             result.onclick = arg1+arg2 || arg2+arg1;
+            return result;
+            }
+            
             break;
         case '*':
+        document.getElementById('mult').onclick = function () {
             result.onclick = arg1*arg2 || arg2*arg1;
+            return result;
+        }
             break;
         case '/':
-            if (arg2 === 0 || arg1 ===0){
-                result.onclick = 'NaN, what had you expected man?';
+            document.getElementById('devide').onclick = function (){
+            if (arg2 == 0 || arg1 == 0){
+               return result.onclick = 'NaN, what had you expected man?';
             } else {
-                result.onclick = arg1/arg2 || arg2/arg1;
+               return result.onclick = arg1/arg2 || arg2/arg1;
             }
+        }
             break;
         case '**':
-            result.onclick = Math.pow(arg1, arg2) || Math.pow(arg2, arg1);
+            document.getElementById('inv').onclick = function (){
+           return result.onclick = Math.pow(arg1, arg2) || Math.pow(arg2, arg1);
+            }
             break;
+
         case 'sqrt':
-            result.onclick = Math.sqrt(arg1 || arg2);
+            document.getElementById('sqrt').onclick = function (){
+           return result.onclick = Math.sqrt(arg1 || arg2);
+            }
+           break;
         default:
-            result.onclick = "if you want to count something, just do it";
+           return result.onclick = "if you want to count something, just do it";
     }
     
     

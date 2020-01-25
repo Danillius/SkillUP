@@ -5,29 +5,31 @@ function calc() {
     switch (calc) {
         case '-':
             function () {
-                let minus = arg1-arg2;
+                let minus = arg1-arg2 || arg2-arg1;
                 return result; 
             }
             break;
         case '+':
-            result = arg1-arg2;
+            result.onclick = arg1+arg2 || arg2+arg1;
             break;
         case '*':
-            result = arg1*arg2;
+            result.onclick = arg1*arg2 || arg2*arg1;
             break;
         case '/':
-            if (arg2 === 0){
-                result = 'NaN, what had you expected man?';
+            if (arg2 === 0 || arg1 ===0){
+                result.onclick = 'NaN, what had you expected man?';
             } else {
-                result = arg1/arg2;
+                result.onclick = arg1/arg2 || arg2/arg1;
             }
             break;
         case '**':
-            result = arg1 ** arg2;
+            result.onclick = Math.pow(arg1, arg2) || Math.pow(arg2, arg1);
             break;
+        case 'sqrt':
+            result.onclick = Math.sqrt(arg1 || arg2);
         default:
-            result = "if you want to count something, just do it"
+            result.onclick = "if you want to count something, just do it";
     }
-    console.log(result);
+    
     
 }

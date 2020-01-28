@@ -33,7 +33,7 @@ button {
   background-color: transparent;
 }
 .main-button>button:hover,
-.learn-button>button:hover {  
+.learn-button>button:hover {
   background-color: #F7941E;
   cursor: pointer;
   transition: all 0.8s ease-in-out;

@@ -19,7 +19,7 @@
         <!-- <input type="number" name="" id="result"> -->
 
         <div class="operand-panel" id="operand">
-          <button id="the one" class="operand" value="1" onclick="operandInput(1)">1</button>
+          <button id="the one" class="operand" >1</button>
           <button id="two" class="operand" value="2"onclick="operandInput(2)">2</button>
           <button id="three" class="operand" value="3"onclick="operandInput(3)">3</button>
           <button id="four" class="operand" value="4"onclick="operandInput(4)">4</button>
@@ -29,21 +29,22 @@
           <button id="eight" class="operand" value="8"onclick="operandInput(8)">8</button>
           <button id="nine" class="operand" value="9"onclick="operandInput(9)">9</button>
           <button id="zero" class="operand zero" value="0"onclick="operandInput(0)">0</button>
-          <button id="dot" class="operand" value=".">&middot;</button>
+          <button id="dot" value=".">&middot;</button>
         </div>
         <div class="operator-panel" id="operator">
           <button id="minus" class="operator" value="-" onclick="operator('-')">&minus;</button>
             <button id="plus" class="operator" value="+" onclick="operator('+')">&plus;</button>
             <button id="mult" class="operator" value="*" onclick="operator('*')">&times;</button>
             <button id="devide" class="operator" value="/" onclick="operator('/')">&divide;</button>
-            <button id="inv" class="operator" value="^"onclick="operator('^')">&sup;</button>
+            <button id="inv" class="operator" value="**" onclick="operator('^')">&sup;</button>
             <button id="sqrt" class="operator" value="sqrt">&radic;</button>
+            <button class="operator" id="clear">CE</button>
             <button type="submit" id="count" class="operator result" value="=">=</button>
         </div>
       </div>
     </div>
   </form>
-    <script src="calculator.js"></script>
+  <script src="calculator.js"></script>
   </body>
 
 </html>

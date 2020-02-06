@@ -1,5 +1,6 @@
 
-const operands = document.querySelectorAll('.operand').value,
+const input = document.getElementById('input'),
+ operands = document.querySelectorAll('.operand').value,
  operators = document.querySelectorAll('.operator').value,
  decimal = document.getElementById('dot'),
  result = document.getElementById('count'),
@@ -8,23 +9,30 @@ const operands = document.querySelectorAll('.operand').value,
  for (let i = operand; i < operands.length; i++) {
     const operand = operands[i];
     operand.addEventListener('click', function (foo) {
-        console.log('button clicked');
+        console.log('operand button clicked');
     });
- }
+ };
 
+ for (let i = operator; i < operators.length; i++) {
+    const operator = operators[i];
+    operator.addEventListener('click', function (foo) {
+        console.log('operator button clicked');
+    });
+ };
 
-function name(params) {
-    
-}
-function name(params) {
-    
-}
-function name(params) {
-    
-}
-function name(params) {
-    
-}
+//  single listeners
+ decimal.addEventListener('click', function (foo) {
+    console.log('clear button');
+});
+
+ result.addEventListener('click', function (foo) {
+     console.log('result button');
+ });
+
+clear.addEventListener('click', function (foo) {
+    console.log('clear button');
+});
+
 
 // let arg1, arg2, result;
 // let calculation = '';
